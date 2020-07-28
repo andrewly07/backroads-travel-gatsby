@@ -15,7 +15,7 @@ const Title = ({ title, subtitle }) => {
 const TitleWrapper = styled.div`
   text-transform: uppercase;
   font-size: 2.3rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   h4 {
     text-align: center;
     letter-spacing: 7px;
