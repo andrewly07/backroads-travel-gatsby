@@ -10,7 +10,7 @@ export default () => (
   <Layout>
     <SimpleHero>
       <Banner
-        title="never say die"
+        title="get your fight on"
         info="Every champion was once a contender that refused to give up."
       >
         <Link to="/classes" className="btn-white">
