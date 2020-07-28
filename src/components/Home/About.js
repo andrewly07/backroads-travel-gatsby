@@ -30,6 +30,13 @@ const About = () => {
             in a local club show, tournament, or exhibition please contact one
             of our coaches.
           </p>
+          <p>
+            Good vibes, friendly staff, accessible parking, sanitized restrooms,
+            and lockers available. We pride ourselves in always maintaining a
+            clean gym. Due to COVID-19 we are taking extra precautions. We use
+            Coronavirus fighting disinfectants and have hand sanitizers easily
+            accessible for all members.
+          </p>
           <button type="button" className="btn-primary">
             read more
           </button>
