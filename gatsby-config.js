@@ -1,15 +1,18 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-
 module.exports = {
   siteMetadata: {
-    title: "Sunday Punch",
+    title: "BackRoads",
     description:
-      "Premier boxing classes and information for beginners and advanced fighters",
+      "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@andrewly",
+    twitterUsername: "@andrewjly",
+    image: "defaultBcg.jpeg",
+    siteUrl: "https://sundaypunch.netlify.com",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,9 +28,9 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
