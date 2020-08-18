@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
-            <AniLink swipe key={index} to={item.path}>
+            <AniLink fade key={index} to={item.path}>
               {item.text}
             </AniLink>
           )
@@ -23,7 +23,7 @@ const Footer = () => {
               key={index}
               href={item.url}
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
             >
               {item.icon}
             </a>
@@ -31,10 +31,11 @@ const Footer = () => {
         })}
       </div>
       <div className={styles.copyright}>
-        copyright &copy; sunday punch {new Date().getFullYear()} all rights
-        reserved
+        copyright &copy; backroads travel company {new Date().getFullYear()} all
+        rights reserved
       </div>
     </footer>
   )
 }
+
 export default Footer

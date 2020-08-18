@@ -1,13 +1,12 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
-// import img from "../../images/boxing-spar.jpeg"
+// import img from "../../images/defaultBcg.jpeg"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-
 const getAbout = graphql`
   query aboutImage {
-    aboutImage: file(relativePath: { eq: "boxing-spar2.jpeg" }) {
+    aboutImage: file(relativePath: { eq: "defaultBcg.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -19,6 +18,7 @@ const getAbout = graphql`
 
 const About = () => {
   const { aboutImage } = useStaticQuery(getAbout)
+
   return (
     <section className={styles.about}>
       <Title title="about" subtitle="us" />
@@ -33,28 +33,14 @@ const About = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>Unleash Your Potential</h4>
+          <h4>explore the difference</h4>
           <p>
-            At Sunday Punch we encourage the members to improve mentally,
-            spiritually and physically to be an all-around better person and
-            athlete. We facilitate the process of helping people make themselves
-            better by improving the holistic, physical, and emotional qualities
-            of life. By following our one of a kind program, members will
-            improve muscular strength, muscular endurance, cardiovascular
-            endurance, flexibility, power, reflex, agility, and self-esteem.{" "}
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            doloribus enim necessitatibus?
           </p>
           <p>
-            We host USA Boxing Sanctioned Amateur events annually and
-            exhibitions throughout the year. If you are interested in competing
-            in a local club show, tournament, or exhibition please contact one
-            of our coaches.
-          </p>
-          <p>
-            Good vibes, friendly staff, accessible parking, sanitized restrooms,
-            and lockers available. We pride ourselves in always maintaining a
-            clean gym. Due to COVID-19 we are taking extra precautions. We use
-            Coronavirus fighting disinfectants and have hand sanitizers easily
-            accessible for all members.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            doloribus enim necessitatibus?
           </p>
           <button type="button" className="btn-primary">
             read more

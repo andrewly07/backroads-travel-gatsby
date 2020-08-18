@@ -1,14 +1,13 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/contact.module.css"
-
 const Contact = () => {
   return (
     <section className={styles.contact}>
       <Title title="contact" subtitle="us" />
       <div className={styles.center}>
         <form
-          action="https://formspree.io/theneotypewriter@gmail.com"
+          action="https://formspree.io/youremail@email.com"
           method="POST"
           className={styles.form}
         >
@@ -19,7 +18,7 @@ const Contact = () => {
               name="name"
               id="name"
               className={styles.formControl}
-              placeholder="enter name"
+              placeholder="john smith"
             />
           </div>
           <div>
@@ -41,7 +40,7 @@ const Contact = () => {
               id="message"
               rows="10"
               className={styles.formControl}
-              placeholder="enter message"
+              placeholder="hello there"
             />
           </div>
           <div>
